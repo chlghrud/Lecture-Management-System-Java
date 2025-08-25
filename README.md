@@ -7,8 +7,23 @@
 
 ---
 ## 프로젝트 실행화면
+---
 
---- 
+### 패키지 구성
+이 프로젝트는 **MVC** 디자인 패턴을 기반으로 설계되었습니다.
+
+* `src/control`: 사용자 입력 및 이벤트 처리를 담당하는 컨트롤러 클래스
+    * `main`: 애플리케이션의 시작점인 `Main.java` 포함
+* `src/model`: 데이터와 비즈니스 로직을 담당하는 모델 클래스
+    * `dao`: 데이터베이스 접근 객체(Data Access Object)
+    * `dto`: 데이터 전송 객체(Data Transfer Object)
+* `src/util`: 다양한 유틸리티 클래스
+    * `BaseFrame.java`: 기본 프레임
+    * `Session.java`: 사용자 세션 관리
+    * `UIUtil.java`: UI 관련 유틸리티
+* `src/view`: 사용자 인터페이스(UI)를 담당하는 뷰 패키지
+  
+---
 
 ## 주요기능
 
